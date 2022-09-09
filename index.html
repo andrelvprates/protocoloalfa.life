@@ -13,10 +13,10 @@
     <link rel="stylesheet" href="./assets/css/com.css">
 
     <!-- Título da Página -->
-    <title>Protocolo Alfa</title>
+    <title>Protocolo Cero</title>
     
     <style type="text/css">
-      header {
+      body {
         color: white;
         background-image: url("assets/img/bg.jpg");
         background-color: rgba(0, 0, 0, 0.6);
@@ -26,26 +26,9 @@
         background-blend-mode: darken;
       }
     </style>
-    
-    <!-- Meta Pixel Code -->
-    <script>
-      !function(f,b,e,v,n,t,s)
-      {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-      n.queue=[];t=b.createElement(e);t.async=!0;
-      t.src=v;s=b.getElementsByTagName(e)[0];
-      s.parentNode.insertBefore(t,s)}(window, document,'script',
-      'https://connect.facebook.net/en_US/fbevents.js');
-      fbq('init', '746169999792551');
-      fbq('track', 'PageView');
-    </script>
-    <noscript><img height="1" width="1" style="display:none"
-      src="https://www.facebook.com/tr?id=746169999792551&ev=PageView&noscript=1"
-    /></noscript>
-    <!-- End Meta Pixel Code -->
-    
+
   </head>
+  <img class="img-fluid" src="./assets/img/disp.svg">
   <body>
     
     <header class="py-4">
@@ -53,410 +36,39 @@
         <div class="row justify-content-center">
           <div class="col-lg-8 text-center">
             <!-- Imagem Ultrasecreto -->
-            <img class="img-fluid" src="./assets/img/ultrasecreto.svg">
+            <img class="img-fluid" src="./assets/img/Headline.svg">
 
             <!-- Headline -->
             <h3 class="my-4"><b></b></h3>
 
             <!-- VSL -->
-           <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/746883895?h=b85431b2c1&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Lead3ESP+27.mp4"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+            <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/746883895?h=b85431b2c1&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Lead3ESP+27.mp4"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
 
-            <!-- Botão 1 -->
+            <!-- x pessoas estao assistindo agora -->
+            <span id="number"></span> personas están viendo este video ahora mismo.
+
+            <script>
+            function add(){number+=Math.floor((Math.random()*6)+1);document.getElementById("number").innerHTML=number;setTimeout("add()",10000);}        
+            function generate(){number=Math.floor(Math.random()*1143)+1578;document.getElementById("number").innerHTML=number;add();}
+            generate();</script>
+
+            <!-- Botão -->
             <div id="cta1" class="mt-4 d-none">
               <a href="https://pay.hotmart.com/E74345424Y?checkoutMode=10" class="a-btn" style="text-decoration: none;">
                 <span class="span-btn">QUIERO GARANTIZAR EL ACCESO A PRECIO PROMOCIONAL!</span>
                 <span class="span-btn2">(ADD TO CART)</span>
               </a>
             </div>
+
+            <!-- Termos de Uso e Política de Privacidade -->
+            <div class="text-white mt-4"><a href="termos.html" class="text-white">Terminos de Uso</a> | <a href="privacidade.html" class="text-white">Políticas de Privacidad</a></div>
           </div>
         </div>
       </div>
     </header>
 
-    <section class="comments py-4">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-lg-8">
-            <div class="fb-comments" style="margin-top: 5px;">
-              <div class="fb-comments-header">
-                <span>21 comentarios</span>
-              </div>
-              <div class="fb-comments-wrapper" id="2">
-                <table class="fb-comments-comment">
-                  <tbody>
-                    <tr>
-                      <td rowspan="3" class="fb-comments-comment-img"><img
-                          src="./assets/img/comentarios/m2.jpeg"></td>
-                      <td>
-                        <font class="fb-comments-comment-name">
-                          <name>Valesca Fernandez</name>
-                        </font>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td class="fb-comments-comment-text">Cada día más feliz, mi esposo no deja de alabarme</td>
-                    </tr>
-                    <tr>
-                      <td class="fb-comments-comment-actions">
-                        <like>Curtir</like>
-                        ·
-                        <reply>Responder</reply>
-                        ·
-                        <likes>8</likes>
-                        
-                        <date>4 min</date>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-              <div class="fb-comments-wrapper" id="3">
-                <table class="fb-comments-comment">
-                  <tbody>
-                    <tr>
-                      <td rowspan="3" class="fb-comments-comment-img"><img
-                          src="./assets/img/comentarios/m3.jpeg"></td>
-                      <td>
-                        <font class="fb-comments-comment-name">
-                          <name>Vitória Perez</name>
-                        </font>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td class="fb-comments-comment-text">Hice todo lo que me dijo y quedé muy contenta con el resultado.</td>
-                    </tr>
-                    <tr>
-                      <td class="fb-comments-comment-actions">
-                        <like>Curtir</like>
-                        ·
-                        <reply>Responder</reply>
-                        ·
-                        <likes>9</likes>
-                        
-                        <date>5 min</date>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-              <div class="fb-comments-wrapper" id="4">
-                <table class="fb-comments-comment">
-                  <tbody>
-                    <tr>
-                      <td rowspan="3" class="fb-comments-comment-img"><img
-                          src="./assets/img/comentarios/m4.jpeg"></td>
-                      <td>
-                        <font class="fb-comments-comment-name">
-                          <name>Mariana Martines</name>
-                        </font>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td class="fb-comments-comment-text">Al principio no creía que fuera posible pero ahora que estoy mas bonita, estoy muy motivada</td>
-                    </tr>
-                    <tr>
-                      <td class="fb-comments-comment-actions">
-                        <like>Curtir</like>
-                        ·
-                        <reply>Responder</reply>
-                        ·
-                        <likes>11</likes>
-                        
-                        <date>12 min</date>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-              <div class="fb-comments-wrapper" id="5">
-                <table class="fb-comments-comment">
-                  <tbody>
-                    <tr>
-                      <td rowspan="3" class="fb-comments-comment-img"><img
-                          src="./assets/img/comentarios/m5.jpeg"></td>
-                      <td>
-                        <font class="fb-comments-comment-name">
-                          <name>Juliana Castilho</name>
-                        </font>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td class="fb-comments-comment-text">Cada día me siento más segura con mi cuerpo</td>
-                    </tr>
-                    <tr>
-                      <td class="fb-comments-comment-actions">
-                        <like>Curtir</like>
-                        ·
-                        <reply>Responder</reply>
-                        ·
-                        <likes>15</likes>
-                        
-                        <date>19 min</date>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-              <div class="fb-comments-wrapper" id="6">
-                <table class="fb-comments-comment">
-                  <tbody>
-                    <tr>
-                      <td rowspan="3" class="fb-comments-comment-img"><img
-                          src="./assets/img/comentarios/m6.jpeg"></td>
-                      <td>
-                        <font class="fb-comments-comment-name">
-                          <name>Isabella Lopes</name>
-                        </font>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td class="fb-comments-comment-text">Empecé a hacerlo hace 3 semanas. A mi esposo le encantó la diferencia y pidió hacerlo también. 😘😘😘</td>
-                    </tr>
-                    <tr>
-                      <td class="fb-comments-comment-actions">
-                        <like>Curtir</like>
-                        ·
-                        <reply>Responder</reply>
-                        ·
-                        <likes>17</likes>
-                        
-                        <date>24 min</date>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-              <div class="fb-comments-wrapper" id="7">
-                <table class="fb-comments-comment">
-                  <tbody>
-                    <tr>
-                      <td rowspan="3" class="fb-comments-comment-img"><img
-                          src="./assets/img/comentarios/m7.jpeg"></td>
-                      <td>
-                        <font class="fb-comments-comment-name">
-                          <name>Roberta Prats</name>
-                        </font>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td class="fb-comments-comment-text">Realmente funciona amigos. Estuve 3 meses sin visitar a mis padres que viven en otra ciudad. Cuando mi madre me vio se sorprendió</td>
-                    </tr>
-                    <tr>
-                      <td class="fb-comments-comment-actions">
-                        <like>Curtir</like>
-                        ·
-                        <reply>Responder</reply>
-                        ·
-                        <likes>18</likes>
-                        
-                        <date>26 min</date>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-              <div class="fb-comments-wrapper" id="9">
-                <table class="fb-comments-comment">
-                  <tbody>
-                    <tr>
-                      <td rowspan="3" class="fb-comments-comment-img"><img
-                          src="./assets/img/comentarios/m11.jpeg">
-                      </td>
-                      <td>
-                        <font class="fb-comments-comment-name">
-                          <name>Rafaela Sonego</name>
-                        </font>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td class="fb-comments-comment-text">probado y aprobado</td>
-                    </tr>
-                    <tr>
-                      <td class="fb-comments-comment-actions">
-                        <like>Curtir</like>
-                        ·
-                        <reply>Responder</reply>
-                        ·
-                        <likes>22</likes>
-                        
-                        <date>39 min</date>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-              <button class="fb-comments-loadmore" onclick="javascript:loadMore();">Cargar 5 comentarios más</button>
-              <div style="display:none" id="more">
-                <div class="fb-comments-wrapper">
-                  <table class="fb-comments-comment" id="10">
-                    <tbody>
-                      <tr>
-                        <td rowspan="3" class="fb-comments-comment-img"><img
-                            src="./assets/img/comentarios/m12.jpeg">
-                        </td>
-                        <td>
-                          <font class="fb-comments-comment-name">
-                            <name>Ana Sofia</name>
-                          </font>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td class="fb-comments-comment-text">Sou brasileira e resolvi testar, nunca vi conteudo com tanta qualidade no meu país. Amei os resultados</td>
-                      </tr>
-                      <tr>
-                        <td class="fb-comments-comment-actions">
-                          <like>Curtir</like>
-                          ·
-                          <reply>Responder</reply>
-                          ·
-                          <likes>41</likes>
-                          
-                          <date>1 h</date>
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-                <div class="fb-comments-wrapper" id="11">
-                  <table class="fb-comments-comment">
-                    <tbody>
-                      <tr>
-                        <td rowspan="3" class="fb-comments-comment-img"><img
-                            src="./assets/img/comentarios/m15.jpeg">
-                        </td>
-                        <td>
-                          <font class="fb-comments-comment-name">
-                            <name>Laura Flores</name>
-                          </font>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td class="fb-comments-comment-text">Me gustó. Voy a empezar hoy porque lo necesito. Muchas gracias
-                       😘</td>
-                      </tr>
-                      <tr>
-                        <td class="fb-comments-comment-actions">
-                          <like>Curtir</like>
-                          ·
-                          <reply>Responder</reply>
-                          ·
-                          <likes>40</likes>
-                          
-                          <date>1 h</date>
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-                <div class="fb-comments-wrapper" id="12">
-                  <table class="fb-comments-comment">
-                    <tbody>
-                      <tr>
-                        <td rowspan="3" class="fb-comments-comment-img"><img
-                            src="./assets/img/comentarios/m16.jpeg">
-                        </td>
-                        <td>
-                          <font class="fb-comments-comment-name">
-                            <name>Daniela Costa</name>
-                          </font>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td class="fb-comments-comment-text">Nunca imaginé que el protocolo alfa sería tan poderoso</td>
-                      </tr>
-                      <tr>
-                        <td class="fb-comments-comment-actions">
-                          <like>Curtir</like>
-                          ·
-                          <reply>Responder</reply>
-                          ·
-                          <likes>47</likes>
-                          
-                          <date>1 h</date>
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-                <div class="fb-comments-wrapper" id="13">
-                  <table class="fb-comments-comment">
-                    <tbody>
-                      <tr>
-                        <td rowspan="3" class="fb-comments-comment-img"><img
-                            src="./assets/img/comentarios/m17.jpeg"></td>
-                        <td>
-                          <font class="fb-comments-comment-name">
-                            <name>Juliana Dias</name>
-                          </font>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td class="fb-comments-comment-text">Em duas semanas comecei a ver resultados, muito bom</td>
-                      </tr>
-                      <tr>
-                        <td class="fb-comments-comment-actions">
-                          <like>Curtir</like>
-                          ·
-                          <reply>Responder</reply>
-                          ·
-                          <likes>50</likes>
-                          
-                          <date>1 h</date>
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-                <div class="fb-comments-wrapper">
-                  <table class="fb-comments-comment" id="14">
-                    <tbody>
-                      <tr>
-                        <td rowspan="3" class="fb-comments-comment-img"><img
-                            src="./assets/img/comentarios/m18.jpeg">
-                        </td>
-                        <td>
-                          <font class="fb-comments-comment-name">
-                            <name>Isabelle Correia</name>
-                          </font>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td class="fb-comments-comment-text">Mi hermano empezó a hacerlo y también me lo recomendó. Estoy muy agradecido</td>
-                      </tr>
-                      <tr>
-                        <td class="fb-comments-comment-actions">
-                          <like>Curtir</like>
-                          ·
-                          <reply>Responder</reply>
-                          ·
-                          <likes>66</likes>
-                          
-                          <date>1 h</date>
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-              </div>
-            </div>
-            <!-- Botão 2 -->
-            <div id="cta2" class="mt-4 d-none">
-              <a href="https://pay.hotmart.com/E74345424Y?checkoutMode=10" class="a-btn" style="text-decoration: none;">
-                <span class="span-btn">QUIERO GARANTIZAR EL ACCESO A PRECIO PROMOCIONAL!</span>
-                <span class="span-btn2">(Add to cart)</span>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <footer class="bg-dark py-3 text-center">
-      <div class="text-white"><a href="termos.html" class="text-white">Terminos de Uso</a> | <a href="privacidade.html" class="text-white">Políticas de Privacidad</a></div>
-    </footer>
-
     <script type="text/javascript">
-      setTimeout(() => {document.getElementById("cta1").classList.remove("d-none"); document.getElementById("cta2").classList.remove("d-none")}, 1260000); // temporização da Call to Action (em milissegundos)
+      setTimeout(() => {document.getElementById("cta1").classList.remove("d-none")}, 1260000); // temporização da Call to Action (em milissegundos)
     </script>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
